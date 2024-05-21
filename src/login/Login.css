@@ -1,0 +1,240 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+.login-page-container {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(to right, #4169e1 50%, white 50%);
+}
+
+.blue-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.white-side {
+    flex: 1;
+    padding-left: 10vw;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    transform: translate(0%, -20%);
+    position: absolute;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+.circle {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: 15px;
+    aspect-ratio: 1/1;
+}
+
+.logo p {
+    text-align: right;
+    padding-right: 5vw;
+}
+
+#app-name {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: -10px;
+}
+
+#app-description {
+    padding-top: 0px;
+}
+
+#app-title {
+    padding-top: 500px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.signup-header h2 {
+    text-align: left;
+    padding-left: 10vw;
+    padding-top: 8vh;
+}
+
+.email-signup {
+    text-align: left;
+    padding-left: 10vw;
+    padding-top: 2vh;
+}
+
+.email-signup label {
+    font-size: 14px;
+}
+
+.email-signup input {
+    width: 50%;
+    padding: 8px;
+    margin: 8px 0;
+    display: inline-block;
+}
+
+#email-signup-bttn {
+    width: 54%;
+    border-radius: 16px;
+    background-color: #4169e1;
+    color: whitesmoke;
+    border-width: 0px;
+    padding: 12px;
+    margin-top: 5px;
+    transition-duration: 0.4s;
+}
+
+.login-options {
+    padding-top: 15px;
+}
+
+#google-bttn, #facebook-bttn, #apple-bttn {
+    display: flex;
+    width: 43%;
+    border-radius: 16px;
+    background-color: #4169e1;
+    color: whitesmoke;
+    border-width: 0px;
+    padding: 12px;
+    margin-left: 10vw;
+    margin-bottom: -10px;
+    transition-duration: 0.4s;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+    margin-right: 60px;
+}
+
+.facebook-icon {
+    width: 22px;
+    height: 22px;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+#email-signup-bttn:hover,
+#google-bttn:hover, 
+#facebook-bttn:hover, 
+#apple-bttn:hover {
+    background-color: whitesmoke;
+    color: #4169e1;
+}
+
+.hr-text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    transform: translateX(-3vw);
+    height: 1.5em;
+    opacity: .5;
+    &:before {
+      content: '';
+      background: linear-gradient(to right, transparent, black, transparent);
+      position: absolute;
+      left: 0%;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+    }
+    &:after {
+      content: attr(data-content);
+      position: relative;
+      display: inline-block;
+      color: black;
+  
+      padding: 0 .5em;
+      line-height: 1.5em;
+      color: black;
+      background-color: #fcfcfa;
+    }
+}
+
+.login-page-redirect {
+    padding-top: 27px;
+    padding-right: 6vw;
+}
+
+.loign-page-redirect b {
+    text-decoration: underline;
+}
+
+@media (max-width: 1064px) {
+    .circle {
+        width: 200px;
+        height: 200px;
+    }
+    #app-title {
+        padding-top: 400px;
+        font-size: 23px;
+    }
+    #app-description {
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 864px) {
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+    #app-title {
+        padding-top: 350px;
+        font-size: 22px;
+    }
+    #app-description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 664px) {
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+    #app-title {
+        padding-top: 250px;
+        font-size: 20px;
+    }
+    #app-description {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 464px) {
+    .circle {
+        width: 50px;
+        height: 50px;
+    }
+
+    #app-title {
+        padding-top: 200px;
+        font-size: 16px;
+    }
+    #app-description {
+        font-size: 10px;
+    }
+}
+
+
